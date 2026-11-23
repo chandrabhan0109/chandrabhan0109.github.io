@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chandrabhan Nigam – AI &amp; Python Developer</title>
+<meta name="description" content="Portfolio of Chandrabhan Nigam, B.Tech CSE student building LLM apps with Python.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F2F5FA;--surface:#FFFFFF;--ink:#16204A;--muted:#55607F;--line:#D3DAEA;--accent:#3B5BDB;--accent-ink:#FFFFFF;--mark:#DCE4FF;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12172B;--surface:#1B2140;--ink:#E8ECFA;--muted:#A3ACCB;--line:#2C3560;--accent:#8FA8FF;--accent-ink:#12172B;--mark:#2A3566;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#12172B;--surface:#1B2140;--ink:#E8ECFA;--muted:#A3ACCB;--line:#2C3560;--accent:#8FA8FF;--accent-ink:#12172B;--mark:#2A3566;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;margin:0;line-height:1.1;letter-spacing:-.02em}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:18px 0;gap:12px;flex-wrap:wrap}
+header.top b{font-family:"Bricolage Grotesque",sans-serif;font-size:18px}
+nav a{margin-left:16px;color:var(--muted);text-decoration:none;font-size:15px}
+nav a:hover{color:var(--ink)}
+.hero{padding:44px 0 28px}
+.hero h1{font-size:clamp(40px,8vw,68px);font-weight:700}
+.hero p.lead{font-size:clamp(18px,2.6vw,21px);color:var(--muted);max-width:34em;margin:16px 0 28px}
+.search{display:flex;gap:8px;max-width:640px}
+.search input{flex:1;min-width:0;font:inherit;padding:14px 16px;border:2px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink)}
+.search input:focus{border-color:var(--accent);outline:none}
+.hint{margin:10px 0 0;color:var(--muted);font-size:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0;padding:0;list-style:none}
+.chips button{font:inherit;font-size:14px;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.chips button:hover{border-color:var(--accent)}
+#results{margin-top:18px;max-width:640px}
+.res{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:12px 14px;margin-bottom:8px}
+.res b{font-family:"Bricolage Grotesque",sans-serif;font-size:17px}
+.res span{display:block;color:var(--muted);font-size:14px}
+.empty{color:var(--muted);font-size:15px}
+section{padding:36px 0;border-top:1px solid var(--line)}
+section h2{font-size:30px;margin-bottom:20px}
+.proj{padding:0 0 22px 18px;margin-bottom:22px;border-left:3px solid var(--line)}
+.proj.live{border-left-color:var(--accent)}
+.proj h3{font-size:21px;margin-bottom:4px}
+.stack{color:var(--muted);font-size:14px;margin:0 0 8px}
+.proj ul{margin:0;padding-left:18px}
+.proj li{margin-bottom:4px}
+.badge{font:500 13px "IBM Plex Sans",sans-serif;background:var(--mark);color:var(--ink);padding:2px 9px;border-radius:999px;margin-left:8px;vertical-align:middle}
+.skills{display:grid;grid-template-columns:200px 1fr;gap:10px 20px;margin:0}
+.skills dt{font-weight:500}
+.skills dd{margin:0;color:var(--muted)}
+.edu p{margin:0 0 10px}
+.edu ul{margin:8px 0 0;padding-left:18px}
+.contact a.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:500;margin:0 10px 10px 0}
+footer{padding:24px 0 40px;color:var(--muted);font-size:14px}
+@media (max-width:600px){.skills{grid-template-columns:1fr;gap:2px}.skills dd{margin-bottom:10px}nav a{margin:0 14px 0 0}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><b>Chandrabhan Nigam</b>
+<nav aria-label="Sections"><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a></nav></header>
+
+<main>
+<div class="hero">
+<h1>I build Python apps that use LLMs.</h1>
+<p class="lead">I’m a B.Tech CSE student at Parul University, Vadodara. I make chatbots, automation and search tools with the OpenAI and Claude APIs.</p>
+<label for="q" class="hint" style="display:block;margin:0 0 8px">Search my work – try a skill or a job need</label>
+<div class="search"><input id="q" type="search" placeholder="e.g. SQL, agents, semantic search" autocomplete="off"></div>
+<ul class="chips" aria-label="Example searches">
+<li><button type="button" data-q="LLM agents">LLM agents</button></li>
+<li><button type="button" data-q="SQL">SQL</button></li>
+<li><button type="button" data-q="semantic search">Semantic search</button></li>
+<li><button type="button" data-q="automation">Automation</button></li>
+<li><button type="button" data-q="Docker">Docker</button></li>
+</ul>
+<div id="results" aria-live="polite"></div>
+</div>
+
+<section id="projects">
+<h2>Projects</h2>
+<article class="proj live">
+<h3>AI Job-Matching Search Tool<span class="badge">In progress</span></h3>
+<p class="stack">Python, FastAPI, SQL, Embeddings, Claude API, Docker</p>
+<ul>
+<li>Building a FastAPI backend that stores job listings in a SQL table and serves search and match endpoints.</li>
+<li>Adding semantic search so job descriptions are matched by meaning, not just keywords.</li>
+<li>Using the Claude API to return structured JSON match explanations, and packaging the app with Docker for a free deploy.</li>
+</ul>
+</article>
+<article class="proj">
+<h3>AI Customer Support Chatbot</h3>
+<p class="stack">Python, OpenAI API, REST APIs</p>
+<ul>
+<li>Answers FAQs and customer queries automatically, with REST API calls built into the backend.</li>
+<li>Keeps conversation history so it remembers context across multi-turn chats.</li>
+<li>Prompt testing and iteration improved response accuracy by over 40%.</li>
+</ul>
+</article>
+<article class="proj">
+<h3>Automated Data Scraper &amp; Summarizer</h3>
+<p class="stack">Python, LLM API, Pandas</p>
+<ul>
+<li>Scrapes web data and summarizes it with an LLM.</li>
+<li>Processes data with Pandas and exports structured reports.</li>
+<li>Error handling and scheduling let it run every day without manual work.</li>
+</ul>
+</article>
+<article class="proj">
+<h3>Personal AI Research Assistant</h3>
+<p class="stack">Python, Hugging Face Transformers, HTML/CSS</p>
+<ul>
+<li>Searches, filters and summarizes research papers using NLP.</li>
+<li>Uses Hugging Face Transformers for text classification and keyword extraction.</li>
+<li>Simple HTML/CSS front end connected to the Python backend.</li>
+</ul>
+</article>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<dl class="skills">
+<dt>LLMs &amp; agents</dt><dd>OpenAI API, Anthropic Claude API, LangChain, AutoGen, CrewAI (conceptual), prompt engineering, Hugging Face Transformers</dd>
+<dt>Backend &amp; APIs</dt><dd>Python, REST APIs, Postman, n8n, Zapier, Make</dd>
+<dt>Databases</dt><dd>MySQL and SQL queries (basics), Firebase (basics)</dd>
+<dt>Data &amp; ML</dt><dd>Pandas, NumPy, scikit-learn (basics), Matplotlib</dd>
+<dt>Tools</dt><dd>Git, GitHub, VS Code, Google Colab, Jupyter Notebook, JavaScript (basics), HTML/CSS</dd>
+<dt>Problem solving</dt><dd>442+ LeetCode problems solved</dd>
+</dl>
+</section>
+
+<section id="education" class="edu">
+<h2>Education</h2>
+<p><b>B.Tech, Computer Science &amp; Engineering</b><br>Parul University, Vadodara, Gujarat · 2024 – 2028 (pursuing)</p>
+<p>Coursework: Data Structures &amp; Algorithms, Database Management Systems, Machine Learning, Artificial Intelligence, Object-Oriented Programming, Operating Systems, Computer Networks.</p>
+<ul>
+<li>Prompt Engineering for Developers – DeepLearning.AI</li>
+<li>Python for Everybody – IBM (University of Michigan)</li>
+<li>Introduction to Artificial Intelligence – IBM</li>
+<li>Machine Learning Crash Course – Google</li>
+<li>Git &amp; GitHub Essentials – LinkedIn Learning</li>
+</ul>
+</section>
+
+<section id="contact" class="contact">
+<h2>Contact</h2>
+<p>I’m looking for an AI engineering internship. Email me at chandra.bhannigam0109@gmail.com, message me on LinkedIn, or call.</p>
+<a class="btn" href="mailto:chandra.bhannigam0109@gmail.com">Email me</a>
+<a class="btn" href="https://www.linkedin.com/in/chandrabhan-nigam-553b44381/" target="_blank" rel="noopener noreferrer">LinkedIn profile</a>
+<a class="btn" href="https://github.com/chandrabhan0109" target="_blank" rel="noopener noreferrer">GitHub profile</a>
+<a class="btn" href="tel:+917747926050">Call +91 7747926050</a>
+</section>
+</main>
+<footer>© 2026 Chandrabhan Nigam · Vadodara, Gujarat, India</footer>
+</div>
+
+<script>
+(function(){
+var items=[
+{t:"AI Job-Matching Search Tool",k:"In progress project",d:"FastAPI backend, SQL jobs table, embeddings for semantic search, Claude API structured JSON, Docker deploy.",g:"python fastapi sql database embeddings semantic search vector meaning claude api json structured docker deploy backend llm rag matching ranking jobs",h:"#projects"},
+{t:"AI Customer Support Chatbot",k:"Project",d:"OpenAI chatbot with REST API calls, conversation memory and 40%+ better accuracy from prompt testing.",g:"llm agent agents chatbot openai prompt prompting memory context rest api tools tool use python evaluation quality accuracy",h:"#projects"},
+{t:"Automated Data Scraper & Summarizer",k:"Project",d:"Daily scheduled pipeline that scrapes, summarizes with an LLM and exports reports with Pandas.",g:"automation scraping summarize llm pipeline pandas schedule python reliable production error handling data",h:"#projects"},
+{t:"Personal AI Research Assistant",k:"Project",d:"Searches, filters and summarizes research papers with Hugging Face Transformers.",g:"nlp search filter summarize hugging face transformers classification keyword extraction research python",h:"#projects"},
+{t:"LLMs & agents",k:"Skill",d:"OpenAI API, Claude API, LangChain, AutoGen, prompt engineering.",g:"llm llms agent agents openai claude anthropic langchain autogen crewai prompt engineering",h:"#skills"},
+{t:"Backend & APIs",k:"Skill",d:"Python, REST APIs, Postman, n8n, Zapier, Make.",g:"python backend api apis rest postman automation n8n zapier make fastapi",h:"#skills"},
+{t:"Databases & SQL",k:"Skill",d:"MySQL and SQL queries (basics), Firebase (basics).",g:"sql mysql database databases tables queries firebase dbms",h:"#skills"}
+];
+var q=document.getElementById("q"),out=document.getElementById("results");
+function norm(s){return s.toLowerCase().replace(/[^a-z0-9 ]/g," ").split(/\s+/).filter(Boolean)}
+function run(){
+var w=norm(q.value);out.textContent="";
+if(!w.length)return;
+var scored=items.map(function(it){
+var hay=(it.t+" "+it.d+" "+it.g).toLowerCase(),s=0;
+w.forEach(function(x){if(hay.indexOf(x)>-1)s++});
+return {it:it,s:s}}).filter(function(r){return r.s>0}).sort(function(a,b){return b.s-a.s}).slice(0,4);
+if(!scored.length){var p=document.createElement("p");p.className="empty";p.textContent="No match yet. Try a skill like Python, SQL or LLM, or email me to ask.";out.appendChild(p);return}
+scored.forEach(function(r){
+var a=document.createElement("a");a.href=r.it.h;a.className="res";a.style.display="block";a.style.textDecoration="none";a.style.color="inherit";
+var b=document.createElement("b");b.textContent=r.it.t;
+var s=document.createElement("span");s.textContent=r.it.k+" – "+r.it.d;
+a.appendChild(b);a.appendChild(s);out.appendChild(a)})}
+q.addEventListener("input",run);
+document.querySelectorAll(".chips button").forEach(function(b){b.addEventListener("click",function(){q.value=b.getAttribute("data-q");run();q.focus()})});
+})();
+</script>
+</body>
+</html>
